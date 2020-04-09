@@ -1,7 +1,13 @@
 # sandeep,sameera
 Maze solving is the act of finding a route through the maze from the start to finish. Some maze solving methods are designed to be used inside the maze by a traveller with no prior knowledge of the maze, whereas others are designed to be used by a person or computer program that can see the whole maze at once. The mathematician Leonhard Euler was one of the first to analyse plane mazes mathematically, and in doing so made the first significant contributions to the branch of mathematics known as topology. Mazes containing no loops are known as "standard", or "perfect" mazes, and are equivalent to a tree in a graph theory. Many maze solving algorithms are closely related to graph theory. If one pulled and stretched out the paths in the maze in the proper way, the result could be made to resemble a tree.
 
-public int[][] generateMaze() { int[][] maze = new int[height][width]; // Initialize for (int i = 0; i < height; i++) for (int j = 0; j < width; j++) maze[i][j] = 1;
+public int[][] generateMaze() 
+{ 
+int[][] maze = new int[height][width]; 
+// Initialize 
+for (int i = 0; i < height; i++) 
+for (int j = 0; j < width; j++)
+maze[i][j] = 1;
 
  Random rand = new Random();
  // r for row、c for column
